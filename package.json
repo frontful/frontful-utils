@@ -1,6 +1,6 @@
 {
   "name": "frontful-utils",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "private": true,
   "description": "Utilities for Javascript applications",
   "license": "MIT",
@@ -8,12 +8,12 @@
     "type": "git",
     "url": "https://github.com/frontful/frontful-utils.git"
   },
+  "main": "./utils/index.js",
   "scripts": {
     "build": "babel-preset-frontful build",
     "deploy": "babel-preset-frontful deploy"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-preset-frontful": "0.x || 1.x",
     "eslint-config-frontful": "0.x || 1.x"
