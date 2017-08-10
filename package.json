@@ -1,6 +1,6 @@
 {
   "name": "frontful-utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": true,
   "description": "Utilities for Javascript applications",
   "license": "MIT",
@@ -13,7 +13,9 @@
     "build": "babel-preset-frontful build",
     "deploy": "babel-preset-frontful deploy"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cookie": "^0.3.1"
+  },
   "devDependencies": {
     "babel-preset-frontful": "0.x || 1.x",
     "eslint-config-frontful": "0.x || 1.x"
