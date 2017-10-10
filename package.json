@@ -1,6 +1,6 @@
 {
   "name": "frontful-utils",
-  "version": "0.0.8",
+  "version": "2.0.2",
   "private": true,
   "description": "Utilities for Javascript applications",
   "license": "MIT",
@@ -10,14 +10,16 @@
   },
   "main": "./utils/index.js",
   "scripts": {
-    "build": "babel-preset-frontful build",
-    "deploy": "babel-preset-frontful deploy"
+    "build": "yarn test && babel-preset-frontful build",
+    "deploy": "yarn test && babel-preset-frontful deploy",
+    "test": "yarn test:eslint",
+    "test:eslint": "node ./node_modules/eslint/bin/eslint.js --max-warnings 0 ."
   },
   "dependencies": {
     "cookie": "^0.3.1"
   },
   "devDependencies": {
-    "babel-preset-frontful": "0.x || 1.x",
-    "eslint-config-frontful": "0.x || 1.x"
+    "babel-preset-frontful": "2.x",
+    "eslint-config-frontful": "2.x"
   }
 }
